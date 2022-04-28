@@ -11,11 +11,11 @@ class CallsList extends StatelessWidget {
           return ListTile(
             leading: const CircleAvatar(
               radius: 30,
-              // backgroundImage: AssetImage('assets/user-3.jpg'),
+              // backgroundImage: AssetImage('assets/images/user-2.jpg'),
             ),
-            title: const Text('UnKnown'),
+            title: const Text('Shry'),
             subtitle: const Text('2mins ago'),
-            // trailing: Icon(Icons.call),
+           
             trailing: SizedBox(
               height: double.infinity,
               width: 45,

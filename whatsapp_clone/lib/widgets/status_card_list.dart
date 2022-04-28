@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
 
-class MyStatus extends StatelessWidget {
-  const MyStatus({Key? key}) : super(key: key);
+class StatusCard extends StatelessWidget {
+  const StatusCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,33 +16,35 @@ class MyStatus extends StatelessWidget {
               radius: 25,
               backgroundColor: Colors.white,
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/user-2.jpg'),
-                radius: 30,
+                // backgroundImage: AssetImage('assets/images/user-6.jpg'),
+                radius: 23,
+                backgroundColor: Colors.green,
               ),
             ),
           ),
           Positioned(
             bottom: 0,
-            top: 30,
             right: 0,
-            left: 38,
             child: CircleAvatar(
-              // radius: 20,
+              radius: 10,
               backgroundColor: Colors.white,
               child: CircleAvatar(
-                // radius: 25,
+                radius: 8,
                 backgroundColor: primaryColor,
                 child: const Icon(
                   Icons.add,
                   color: Colors.white,
-                  size: 18,
+                  size: 15,
                 ),
               ),
             ),
           )
         ],
       ),
-      title: const Text('My Status'),
+      title: const Text(
+        'My status',
+        style: TextStyle(fontWeight: FontWeight.w500),
+      ),
       subtitle: const Text('Tap to add status update'),
     );
   }

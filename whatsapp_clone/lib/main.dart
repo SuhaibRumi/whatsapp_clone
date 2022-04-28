@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../view/view.dart';
+import 'package:whatsapp_clone/widgets/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeView(),
+      home: const ChatBar(),
     );
   }
 }

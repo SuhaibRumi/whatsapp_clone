@@ -1,0 +1,24 @@
+[
+    {
+      "id": "1",
+      "userName": "Abram",
+      "profileImage": "assets/1.jpg",
+      "isMuted": true,
+      "timeAgo": "2 min"
+    },
+    {
+      "id": "2",
+      "userName": "Ali",
+      "profileImage": "assets/1.jpg",
+      "isMuted": true,
+      "timeAgo": "2 min"
+    },
+    {
+      "id": "3",
+      "userName": "Hassain",
+      "profileImage": "assets/1.jpg",
+      "isMuted": true,
+      "timeAgo": "2 min"
+    }
+  ]
+  

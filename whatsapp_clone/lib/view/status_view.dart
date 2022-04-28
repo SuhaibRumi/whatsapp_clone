@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/status_items.dart';
-import '../widgets/my_status.dart';
+import 'package:whatsapp_clone/widgets/widgets.dart';
 
 class StatusView extends StatelessWidget {
   const StatusView({Key? key}) : super(key: key);
@@ -13,14 +12,27 @@ class StatusView extends StatelessWidget {
           children: [
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: 500,
-              child: const MyStatus(),
+              height: 100,
+              child: const StatusCard(),
             ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width,
-              height: 500,
-              child: const StatusItem(),
+            const SizedBox(
+              height: 8,
             ),
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                  "Recents updates",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const StatusList(),
+            const SizedBox(
+              height: 8,
+            ),
+            const MutedStatusList(),
           ],
         ),
       ),

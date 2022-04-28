@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "whatsapp_clone",
+            "cwd": "whatsapp_clone",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "whatsapp_clone (profile mode)",
+            "cwd": "whatsapp_clone",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "whatsapp_clone (release mode)",
+            "cwd": "whatsapp_clone",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

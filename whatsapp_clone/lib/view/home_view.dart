@@ -14,7 +14,7 @@ class _HomeViewState extends State<HomeView>
     with SingleTickerProviderStateMixin {
   var _tabController;
   final screens = [
-    const Center(child: Text('Camera')),
+    const CameraView(),
     const ChatView(),
     const StatusView(),
     const CallsView()
@@ -30,7 +30,10 @@ class _HomeViewState extends State<HomeView>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WhatsApp'),
+        title: const Text(
+          'WhatsApp',
+          textScaleFactor: 1,
+        ),
         backgroundColor: primaryColor,
         actions: [
           CircleButton(onPressed: () {}, icon: const Icon(Icons.search)),
@@ -56,10 +59,7 @@ class _HomeViewState extends State<HomeView>
           ],
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: screens
-      ),
+      body: TabBarView(controller: _tabController, children: screens),
     );
   }
 }
