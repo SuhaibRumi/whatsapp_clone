@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../view/view.dart';
 
 void main() {
@@ -15,7 +16,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Whatsapp Clone',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        
         primarySwatch: Colors.blue,
       ),
       home: const HomeView(),
