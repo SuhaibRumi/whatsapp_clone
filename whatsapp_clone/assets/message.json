@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "userName": "Abram",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "Hello Dear",
+    "timeAgo": "2 min",
+    "messageType": "text",
+    "isSender": true
+  },
+  {
+    "id": "2",
+    "userName": "Ahmed",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "Hi how are you?",
+    "timeAgo": "5 min",
+    "messageType": "text",
+    "messageStatus": "sent",
+    "isSender": false
+  },
+  {
+    "id": "3",
+    "userName": "Ali",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "I'm fine what's going on?",
+    "timeAgo": "12 min",
+    "messageType": "text",
+    "isSender": true
+  },
+  {
+    "id": "4",
+    "userName": "Ali",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "nothing",
+    "timeAgo": " 8 min",
+    "messageStatus": "sent",
+    "isSender": false
+  },
+  {
+    "id": "5",
+    "userName": "Ali",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "let's plan get together",
+    "timeAgo": "24s min",
+    "messageType": "text",
+    "isSender": true
+  },
+  {
+    "id": "6",
+    "userName": "Ali",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "yeah why not? tomorrow 9:00 pm",
+    "timeAgo": "24s min",
+    "messageType": "text",
+    "isSender": false
+  },
+  {
+    "id": "7",
+    "userName": "Ali",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "Oke ",
+    "timeAgo": "24s min",
+    "messageType": "text",
+    "isSender": true
+  },
+  {
+    "id": "8",
+    "userName": "Ali",
+    "profileImage": "assets/1.jpg",
+    "lastMessage": "done",
+    "timeAgo": "24s min",
+    "messageType": "text",
+    "isSender": false
+  }
+]

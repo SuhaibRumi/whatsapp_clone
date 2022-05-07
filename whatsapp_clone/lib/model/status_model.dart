@@ -7,14 +7,13 @@ class Status {
 
   Status(
       {this.id, this.userName, this.profileImage, this.timeAgo, this.isMuted});
-
   factory Status.fromMap(Map map) {
     return Status(
       id: map['id'],
       userName: map['userName'],
       profileImage: map['profileImage'],
       timeAgo: map['timeAgo'],
-      isMuted: map[true],
+      isMuted: map['isMuted'],
     );
   }
   toMap() {

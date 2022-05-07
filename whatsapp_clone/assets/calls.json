@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "userName": "Abram",
+    "profileImage": "assets/1.jpg",
+    "callDuration": "10:00",
+    "timeAgo": "2 min",
+    "dataUsage": "100kb", 
+    "callStatus": "Missed", 
+    "callTime": "12:00" 
+  },
+  {
+    "id": "2",
+    "userName": "Ahsan",
+    "profileImage": "assets/1.jpg",
+    "callDuration": "10:00",
+    "timeAgo": "2 min",
+    "dataUsage": "100kb", 
+    "callStatus": "Missed", 
+    "callTime": "12:00" 
+  },
+  {
+    "id": "3",
+    "userName": "Zain",
+    "profileImage": "assets/1.jpg",
+    "callDuration": "10:00",
+    "timeAgo": "2 min",
+    "dataUsage": "100kb", 
+    "callStatus": "Missed", 
+    "callTime": "12:00" 
+  }
+]

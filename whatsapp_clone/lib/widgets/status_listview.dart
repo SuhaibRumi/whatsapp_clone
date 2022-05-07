@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class StatusList extends StatelessWidget {
   const StatusList({Key? key}) : super(key: key);
 
@@ -8,22 +9,22 @@ class StatusList extends StatelessWidget {
     return ListView.builder(
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      itemCount: 5,
+      itemCount: 15,
       itemBuilder: (context, index) {
         return const ListTile(
           leading: CircleAvatar(
             radius: 30,
-            backgroundColor: Colors.green,
+            backgroundColor:Colors.green,
             child: CircleAvatar(
               radius: 25,
               backgroundColor: Colors.white,
               child: CircleAvatar(
-                // backgroundImage: AssetImage('assets/images/user-4.jpg'),
-                radius: 23,
+                backgroundImage: AssetImage('assets/1.jpg'),
+                radius: 22,
               ),
             ),
           ),
-          title: Text("Ali"),
+          title: Text("Ahmed"),
           subtitle: Text("2min ago"),
         );
       },
