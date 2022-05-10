@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/view/media_links_view.dart';
+import 'package:whatsapp_clone/view/view.dart';
+import 'package:whatsapp_clone/view/view_contact_view.dart';
 import 'package:whatsapp_clone/view_model/message_view_model.dart';
 import 'package:whatsapp_clone/widgets/widgets.dart';
 import '../utils/colors.dart';
@@ -60,15 +63,36 @@ class _ChatDetailsState extends State<ChatDetails> {
               iconSize: 20,
               itemBuilder: (context) => [
                     PopupMenuItem(
-                      child: const Text("View Contact"),
+                      child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => const ViewContactPage()));
+                          },
+                          child: const Text("View Contact")),
                       onTap: () {},
                     ),
                     PopupMenuItem(
-                      child: const Text("Media, links and docs"),
+                      child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => const MediaLinksPage()));
+                          },
+                          child: const Text("Media, links and docs")),
                       onTap: () {},
                     ),
                     PopupMenuItem(
-                      child: const Text("Search"),
+                      child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => const SearchPage()));
+                          },
+                          child: const Text("Search")),
                       onTap: () {},
                     ),
                     PopupMenuItem(
@@ -76,33 +100,34 @@ class _ChatDetailsState extends State<ChatDetails> {
                       child: InkWell(
                           onTap: () async {
                             await showDialog(
-                              context: context,
-                              builder: (context) {
-                                return  AlertDialog(
-                                    title: const Text("Mute Notifications for..."),
+                                context: context,
+                                builder: (context) {
+                                  return AlertDialog(
+                                    title:
+                                        const Text("Mute Notifications for..."),
                                     content: SizedBox(
                                       height: 250,
-                                      child: Column(
-                                        children: [
-                                          RadioListTile(
-                                            value: 8,
-                                             groupValue: "notification",
-                                              onChanged: (value)
-                                              {
-                                                
-                                              },
-                                              title: const Text("8 hours"),
-                                              )
-                                        ]),
+                                      child: Column(children: [
+                                        RadioListTile(
+                                          value: 8,
+                                          groupValue: "notification",
+                                          onChanged: (value) {},
+                                          title: const Text("8 hours"),
+                                        )
+                                      ]),
                                     ),
                                     actions: [
                                       TextButton(
-                                        onPressed:(){},
-                                         child: const Text("cancel"),),
+                                        onPressed: () {},
+                                        child: const Text("CANCEL"),
+                                      ),
+                                      TextButton(
+                                        onPressed: () {},
+                                        child: const Text("OK"),
+                                      ),
                                     ],
-                                    
-                                    );
-                              });
+                                  );
+                                });
                           },
                           child: const Text("Mute notifications")),
                       onTap: () async {
@@ -143,7 +168,7 @@ class _ChatDetailsState extends State<ChatDetails> {
               );
             }
             List<MessageViewModel> dataList = snapshot.data!;
-          
+
             return Messages(
               messageList: dataList,
             );

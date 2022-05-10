@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1",
+        "username":"Ali",
+        "imageUrl":"assets/1.jpg",
+        "desc":"Hey I am using WhatsApp"
+    },
+    {
+        "id":"2",
+        "username":"Ali",
+        "imageUrl":"assets/1.jpg",
+        "desc":"Hey I am using WhatsApp"
+    },
+    {
+        "id":"3",
+        "username":"Ali",
+        "imageUrl":"assets/1.jpg",
+        "desc":"Hey I am using WhatsApp"
+    },
+    {
+        "id":"4",
+        "username":"Ali",
+        "imageUrl":"assets/1.jpg",
+        "desc":"Hey I am using WhatsApp"
+    },
+    {
+        "id":"5",
+        "username":"Ali",
+        "imageUrl":"assets/1.jpg",
+        "desc":"Hey I am using WhatsApp"
+    },
+    {
+        "id":"6",
+        "username":"Ali",
+        "imageUrl":"assets/1.jpg",
+        "desc":"Hey I am using WhatsApp"
+    }
+]

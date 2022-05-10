@@ -43,32 +43,67 @@ class _HomeViewState extends State<HomeView>
         actions: [
           CircleButton(onPressed: () {}, icon: const Icon(Icons.search)),
           PopupMenuButton(
-            iconSize: 20,
-            itemBuilder: (context) {
-
-            return [
-               PopupMenuItem(
-                child: const Text("New Group"),
-                onTap: () {},
-              ),
-               PopupMenuItem(
-                child: const Text("New Broadcast"),
-                onTap: () {},
-              ),
-               PopupMenuItem(
-                child: const Text("Linked Devices"),
-                onTap: () {},
-              ),
-               PopupMenuItem(
-                child: const Text("Starred Messages"),
-                onTap: () {},
-              ),
-               PopupMenuItem(
-                child: const Text("Settings"),
-                onTap: () {},
-              ),
-            ];
-          })
+              iconSize: 20,
+              itemBuilder: (context) {
+                return [
+                  PopupMenuItem(
+                    child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const NewGroupPage()));
+                        },
+                        child: const Text("New Group")),
+                    onTap: () {},
+                  ),
+                  PopupMenuItem(
+                    child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const BroadCast()));
+                        },
+                        child: const Text("New Broadcast")),
+                    onTap: () {},
+                  ),
+                  PopupMenuItem(
+                    child: InkWell(
+                        splashColor: Colors.blue,
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const LinkedDevicePage()));
+                        },
+                        child: const Text("Linked Devices")),
+                    onTap: () {},
+                  ),
+                  PopupMenuItem(
+                    child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const StarMessagePage()));
+                        },
+                        child: const Text("Starred Messages")),
+                    onTap: () {},
+                  ),
+                  PopupMenuItem(
+                    child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const SettingProfilePage()));
+                        },
+                        child: const Text("Settings")),
+                    onTap: () {},
+                  ),
+                ];
+              })
         ],
         bottom: TabBar(
           onTap: (index) {

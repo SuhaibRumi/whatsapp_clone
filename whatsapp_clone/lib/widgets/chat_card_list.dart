@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/view/view.dart';
-import 'package:whatsapp_clone/view_model/view_model.dart';
-
+import '../view/view.dart';
+import '../view_model/view_model.dart';
 import '../view/chat_view_details.dart';
 
 class ChatCardList extends StatelessWidget {
@@ -20,15 +19,8 @@ class ChatCardList extends StatelessWidget {
           },
           child: ListTile(
             leading: CircleAvatar(
-              radius: 30,
-              backgroundColor: Colors.green,
-              child: CircleAvatar(
-                  radius: 25,
-                  backgroundColor: Colors.white,
-                  child: CircleAvatar(
-                    radius: 22,
-                    backgroundImage: AssetImage(chatList[index].profileImage),
-                  )),
+              radius: 25,
+              backgroundImage: AssetImage(chatList[index].profileImage),
             ),
             title: Text(chatList[index].userName),
             subtitle: Text(chatList[index].lastMessage),
