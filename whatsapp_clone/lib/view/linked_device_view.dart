@@ -8,6 +8,7 @@ class LinkedDevicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white70,
       appBar: AppBar(
         backgroundColor: primaryColor,
         leadingWidth: 50,
@@ -24,7 +25,7 @@ class LinkedDevicePage extends StatelessWidget {
                   image: AssetImage("assets/bg.png"),
                   fit: BoxFit.cover,
                 ),
-                color: const Color.fromARGB(255, 255, 255, 255),
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(8)),
           ),
           Column(

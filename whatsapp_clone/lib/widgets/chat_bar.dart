@@ -36,7 +36,7 @@ class ChatBar extends StatelessWidget {
                             Icons.attachment,
                           )),
                       CircleButton(
-                          onPressed: () {}, icon: const Icon(Icons.camera_alt)),
+                          onPressed: () {}, icon: const Icon(Icons.send)),
                     ],
                   ),
                 ),
@@ -48,7 +48,10 @@ class ChatBar extends StatelessWidget {
             child: CircleAvatar(
               radius: 22,
               backgroundColor: primaryColor,
-              child: const Icon(Icons.mic, color: Colors.white,),
+              child: const Icon(
+                Icons.mic,
+                color: Colors.white,
+              ),
             ),
           )
         ],
